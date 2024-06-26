@@ -15,6 +15,7 @@ public class Libro {
     @ManyToOne
     @JoinColumn(name = "autor_id")
     private Autor autor;
+    @Column(columnDefinition = "text[]")
     private List<String> idiomas;
     private Integer descargas;
 
